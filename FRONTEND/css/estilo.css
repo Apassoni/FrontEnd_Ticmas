@@ -1,0 +1,30 @@
+body {
+    background-color: lightblue;
+  }
+
+  #datos_personales {
+    width: 200px;
+    min-width: 200px;
+    background-color: rgb(158, 245, 124);
+    padding: 1px 30px 1px 30px;
+    float: left;
+  }
+
+div {
+    position: relative;
+    overflow: auto;
+  }
+
+#principal {
+    margin: 1px;
+    padding: 1px 10px 1px 50px;
+  }
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    margin: 1px;
+}
+  
