@@ -1,11 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
 body {
-    background-color: lightblue;
-  }
+    /*background-color: lightskyblue*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+}
+nav a:hover {
+  background-color: rgb(43, 131, 160);
+  font-style: oblique;
+}
+nav a {
+  border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+  padding: 6px; /*espacio alrededor texto*/
+  background-color: #2e518b; /*color botón*/
+  color: #ffffff; /*color texto*/
+  text-decoration: none; /*decoración texto*/
+  text-transform: uppercase; /*capitalización texto*/
+  border-radius: 0px 20px 0px 0px; /*bordes redondos*/
+  font-size: 75%;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  scale: 0.5;
+}
+
+footer {
+  min-width: 300px;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20vh 0 20vh;
+}
 
   #datos_personales {
     width: 200px;
     min-width: 200px;
-    background-color: rgb(158, 245, 124);
     padding: 1px 30px 1px 30px;
     float: left;
   }
@@ -27,4 +66,7 @@ ul {
 h1 {
     margin: 1px;
 }
+
+nav button {
   
+}
