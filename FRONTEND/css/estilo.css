@@ -16,15 +16,16 @@ body {
 
 }
 #barra_navegacion a:hover {
-  background-color: rgb(43, 131, 160);
+  background-color: #694623;
   font-style: oblique;
 }
 #barra_navegacion a {
-  border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+  border: 1px solid #000000; /*anchura, estilo y color borde*/
   padding: 6px; /*espacio alrededor texto*/
-  background-color: #2e518b; /*color botón*/
-  color: #ffffff; /*color texto*/
-  text-decoration: none; /*decoración texto*/
+  background-color: #D18A44; /*color botón*/
+  color: #000000; /*color texto*/
+  text-decoration: none;
+  font-weight: bold;
   text-transform: uppercase; /*capitalización texto*/
   border-radius: 0px 20px 0px 0px; /*bordes redondos*/
   font-size: 75%;
@@ -40,11 +41,13 @@ body {
   justify-content: right;
   z-index: 1000;
   width: 100%;
-  
+  background-color: #A87038;
 }
 
 #ppal {
-  margin-top: 40px;
+  margin-top: 70px;
+  overflow-x: hidden;
+
 }
 
 footer img {
@@ -52,20 +55,24 @@ footer img {
 }
 
 footer {
-  min-width: 300px;
+
   display: flex;
   justify-content: space-around;
   padding: 0 20vh 0 20vh;
+  background-color: #A87038;
 }
 
   #datos_personales {
     width: 200px;
-    min-width: 200px;
-    padding: 1px 30px 1px 30px;
+
+    padding: 1px 0px 1px 30px;
     float: left;
     font-size: 85%;
+     
   }
-
+#datos_personales li{
+  text-align: left;
+}
 div {
     position: relative;
     overflow: auto;
@@ -73,7 +80,7 @@ div {
 
 #principal {
     margin: 1px;
-    padding: 1px 30px 1px 1px;
+    padding: 1px 30px 1px 30px;
   }
 
 ul {
@@ -88,10 +95,12 @@ h1 {
 nav button {
   display: flex;
   justify-content: left;
+  border: none;
 }
 
- #experiencias li {
+ li {
   text-align: justify;
+  margin-bottom: 1em;
 } 
 
 #datos_personales img {
@@ -99,3 +108,22 @@ nav button {
   margin: auto;
 }
 
+/* la clase titulo es equivalente a usar h2*/
+.titulos {
+  font-style: italic;
+  font-stretch: expanded;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 800px) {
+  #datos_personales {
+    float: none;
+    width: 100%;
+  }
+}
+
+nav img{
+  background-color: #A87038;
+}

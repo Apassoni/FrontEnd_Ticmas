@@ -1,13 +1,12 @@
-document.body.style.backgroundColor = "orange"; 
-document.getElementById("barra_navegacion").style.backgroundColor = "orange";
+document.body.style.backgroundColor = "#D18A44"; 
 function cambiarTema(){
-    if (document.body.style.backgroundColor == "orange"){
-        document.body.style.backgroundColor = "lightskyblue";
-        document.getElementById("barra_navegacion").style.backgroundColor = "lightskyblue";
+    if (document.body.style.backgroundColor == "rgb(209, 138, 68)"){
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
         
     } else {
-        document.body.style.backgroundColor = "orange";
-        document.getElementById("barra_navegacion").style.backgroundColor = "orange";
+        document.body.style.backgroundColor = "#D18A44";
+        document.body.style.color = "black";
         
     }
 }
