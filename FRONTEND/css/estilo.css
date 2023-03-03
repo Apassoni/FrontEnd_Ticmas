@@ -67,13 +67,13 @@ body {
 
 #barra_navegacion a {
   border: 1px solid #000000; /*anchura, estilo y color borde*/
-  padding: 6px; /*espacio alrededor texto*/
+  padding: 6px ; /*espacio alrededor texto*/
   background-color: #D18A44; /*color botón*/
   color: #000000; /*color texto*/
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase; /*capitalización texto*/
-  border-radius: 0px 20px 0px 0px; /*bordes redondos*/
+  border-radius: 10px; /*bordes redondos*/
   font-size: 75%;
   display: block;
 }
