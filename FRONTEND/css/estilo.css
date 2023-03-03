@@ -78,14 +78,14 @@ body {
   display: block;
 }
 
-nav button {
+#mn {                        /*caracteristicas boton modo nocturno*/
   display: flex;
   justify-content: left;
   border: none;
   cursor: pointer;
   border-radius: 4px;
 }
-#mn:hover {
+#mn:hover {                  /*animacion boton modo nocturno*/
   scale: 1.2;
 }
 
