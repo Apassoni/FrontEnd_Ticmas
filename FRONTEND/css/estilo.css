@@ -50,8 +50,7 @@ body {
 /* ----------------------------------- INICIO BARRA DE NAVEGACION -----------------------------*/
 
 #barra_navegacion a:hover {
-  background-color: #694623;
-  font-style: oblique;
+  scale: 1.2;
 }
 
 #barra_navegacion {
@@ -85,6 +84,9 @@ nav button {
   border: none;
   cursor: pointer;
   border-radius: 4px;
+}
+#mn:hover {
+  scale: 1.2;
 }
 
 nav img{
