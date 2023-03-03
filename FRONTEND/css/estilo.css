@@ -83,6 +83,8 @@ nav button {
   display: flex;
   justify-content: left;
   border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 nav img{
