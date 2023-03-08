@@ -6,12 +6,7 @@
   box-sizing: content-box;
 }
 
-@media screen and (max-width: 800px) {
-  #datos_personales {
-    float: none;
-    width: 100%;
-  }
-}
+
 
 div {
   position: relative;
@@ -46,6 +41,18 @@ body {
 
 /* -------------------------------- FIN BODY -------------------------------------------------*/
 
+/* -------------------------------- INICIO CLASE .titulos --------------------------------*/
+/* la clase titulo es equivalente a usar h2*/
+
+.titulos {
+  font-style: italic;
+  font-stretch: expanded;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid black;
+}
+
+/* --------------------------------------- FIN CLASE .titulos -----------------------------*/
 
 /* ----------------------------------- INICIO BARRA DE NAVEGACION -----------------------------*/
 
@@ -60,6 +67,7 @@ body {
   padding: 10px 30px 10px 10px;
   display: flex;
   justify-content: right;
+  gap: 10px;
   z-index: 1000;
   width: 100%;
   background-color: #A87038;
@@ -75,34 +83,28 @@ body {
   text-transform: uppercase; /*capitalización texto*/
   border-radius: 10px; /*bordes redondos*/
   font-size: 75%;
-  display: block;
+  
 }
 
 #mn {                        /*caracteristicas boton modo nocturno*/
   display: flex;
-  justify-content: left;
-  border: none;
+  justify-content: center;
+  border: 1px solid #000000; /*anchura, estilo y color borde*/
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 10px;
+  background-color: #D18A44;
+  width: 50px;
 }
+
 #mn:hover {                  /*animacion boton modo nocturno*/
   scale: 1.2;
 }
 
 nav img{
-  background-color: #A87038;
+  scale: 0.7;
 }
 
 /* ------------------------------------ FIN BARRA NAVEGACION --------------------*/
-
-
-/* ------------------------------------- INICIO #PPAL -----------------------------*/
-
-#ppal {
-  margin-top: 70px;
-  overflow-x: hidden;
-}
-/* -------------------------------------- FIN #PPAL -------------------------------*/
 
 
 /* ------------------------------------- INICIO FOOTER -----------------------------------------*/
@@ -121,13 +123,25 @@ footer {
 
 /* ------------------------------------- FIN FOOTER ---------------------------------------*/
 
+/* ------------------------------------- INICIO #PPAL -----------------------------*/
+
+#ppal {
+  margin-top: 70px;
+  display: flex;
+  padding: 30px;
+}
+/* -------------------------------------- FIN #PPAL -------------------------------*/
+
+
 /* -------------------------------------- INICIO DATOS PERSONALES -------------------------*/
 
 #datos_personales {
   width: 200px;
-  padding: 1px 0px 1px 30px;
-  float: left;
+  padding: 10px 10px 1px 10px;
   font-size: 85%;
+  position: fixed;
+  background-color: #A87038;
+  border-radius: 10px;
   }
 
 #datos_personales li{
@@ -146,20 +160,44 @@ footer {
 
 #principal {
 margin: 1px;
-padding: 1px 30px 1px 30px;
+padding: 1px 0px 1px 250px;
+
 }
 
 /* --------------------------------------- FIN #PRINCIPAL --------------------------------*/ 
 
-/* -------------------------------- INICIO CLASE .titulos --------------------------------*/
-/* la clase titulo es equivalente a usar h2*/
+/* ----------------------------INICIO DE AJUSTES POR TAMAÑO DE PANTALLA ------------------*/ 
 
-.titulos {
-  font-style: italic;
-  font-stretch: expanded;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  border-bottom: 1px solid black;
+@media screen and (max-width: 600px) {
+  #ppal {
+    flex-direction: column;
+    margin-top: 200px;
+
+  }
+  #datos_personales {
+    position: static;
+    width: auto;
+  }
+  #datos_personales li {
+    text-align: center;
+  }
+  #principal {
+    padding: 10px 30px 1px 30px;
+  }
+  #barra_navegacion {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    /*gap: 0px;*/
+  }
+  #barra_navegacion a {
+    display: block;
+    text-align: center;
+  }
+  #mn {
+    justify-content: center;
+    width: auto;
+    background-color: #D18A44;
+  }
 }
-
-/* --------------------------------------- FIN CLASE .titulos -----------------------------*/
+/* ----------------------------FIN DE AJUSTES POR TAMAÑO DE PANTALLA --------------------*/
